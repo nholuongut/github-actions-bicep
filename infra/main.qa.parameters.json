@@ -1,0 +1,37 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "0.0.0.1",
+    "parameters": {
+        "appInsights": {
+            "value": {
+                "kind": "web",
+                "name": "ai-0U812-qa"
+            }
+        },
+        "environment": {
+            "value": "QA"
+        },
+        "location": {
+            "value": "EastUS2"
+        },
+        "plan": {
+            "value": {
+                "kind": "windows",
+                "name": "asp-0U812-qa",
+                "sku": {
+                    "name": "S1"
+                }
+            }
+        },
+        "resourceGroup": {
+            "value": {
+                "name": "rg-github-actions-bicep-qa"
+            }
+        },
+        "webApp": {
+            "value": {
+                "name": "app-0U812-qa"
+            }
+        }
+    }
+}
